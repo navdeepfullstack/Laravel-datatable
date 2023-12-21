@@ -30,7 +30,7 @@ Route::middleware('prevent-back-history')->group(function () {
 
         Route::get('/', 'HomeController@index')->name('user.home');
         Route::resource('users', 'UserController');
-        Route::any('addUserCard','CardController@addUserCard')->name('users.addUserCard');
+         
        
     });
 });
